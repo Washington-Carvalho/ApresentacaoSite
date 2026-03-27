@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+@font-face {
+    font-family: Rockstar;
+    src: url(../fontes/Rockstar-ExtraBold.otf) format('opentype');
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* estilo do header */
+
+header{
+    width: 100%;
+    padding: 40px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    transition: .63s;
+    z-index: 99999;
+}
+
+header .interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .logo img{
+    max-width: 40px;
+}
+
+/* Menu dinamico */
+
+header.rolar{
+    background-color: #000;
+    padding: 20px 0 ;
+    box-shadow: 0 0 8px #00000061;
+}
+header.rolar .menu-desktop nav ul li a{
+    color:#fff
+}
+
+
+/* ------------------- */
+
+header .menu-desktop nav ul{
+    list-style-type: none;
+}
+
+header .menu-desktop nav ul li{
+    display: inline-block;
+    margin: 0 85px; 
+}
+
+header .menu-desktop nav ul li a{
+    color: red;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+.menu-desktop nav a:hover{
+    transform: scale(1.05);
+
+}
+/* Estilo Hero */
+section.hero-site{
+    height: 99vh;
+    background-image: url(../imagem/bgmax.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:#fff;
+}
+
+.hero-site .interface{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-site .txt-hero h1{
+    font-size: 8em;
+    line-height: 125px;
+    font-weight: 600;
+    font-family: Rockstar;
+    color: red;
+}
+.hero-site .txt-hero h1 span{
+    display: block;
+    font-weight: 800;
+    color: red;
+    font-family: Rockstar;
+}
+
+.hero-site .txt-hero p{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+.hero-site .txt-hero p span{
+    display: block;
+    color: red;
+}
+
+/* Estilo Games */
+section.jogos{
+    padding: 80px 0;
+}
+
+.jogos .games-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 60px;
+}
+
+.jogos .games-container .img-max img{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.jogos .games-container .txt-max h3{
+    font-size: 5em;
+    line-height: 50px;
+    font-family: Rockstar;
+    color: red;
+    margin-bottom: 30px;
+}
+
+.jogos .games-container .txt-max p{
+    color: #fff;
+}
+
+/* estilo overlay */
+
+section.historia{
+    height: 600px;
+
+    background-image: url(../imagem/max2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+    position: relative;
+    color: #fff;
+}
+
+.historia > .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000ba;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.historia > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.historia h3{
+    font-size: 3em;
+    line-height: 50px;
+    font-weight: 500;
+    font-family: Rockstar;
+    text-align: center;
+}
+
+.historia h3 span{
+    font-family: Rockstar;
+    color: red;
+}
+
+.historia p{
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
